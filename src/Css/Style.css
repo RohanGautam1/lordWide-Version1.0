@@ -1,0 +1,69 @@
+body{
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.alreadyMember .text{
+    color: #7A86A1;
+    font-weight: 400 !important;
+    padding-right: .5rem;
+    
+}
+.alreadyMember .text a{
+    color: #6149CD;
+    font-size: medium;
+    font-weight: 600 !important;
+    margin-right: .5rem;
+    text-decoration: none;
+}
+hr{
+    width: 32px;
+    margin: 0rem;
+}
+.imageText h1{
+    color: #FFFFFF;
+    font-size: 48px;
+    padding: 2rem 5rem 0rem 10rem;
+    font-weight: 800 !important;
+}
+.formText h3{
+    color: black;
+    font-weight: 800 !important;
+}
+.formText h6{
+    color: #7A86A1;
+    font-weight: 400 !important;
+}
+.form-group input{
+    border: 1px solid #EBEBEB;
+}
+.form-group label{
+    color: black;
+    font-weight: 800 !important;
+    font-size: small;
+}
+.form-group input{
+    padding: .5rem;
+    margin: .5rem 0rem;
+}
+.form-group input::placeholder{
+    color: #7A86A1;
+    font-weight: 400 !important;
+    font-size: small;
+}
+.formButton button{
+    background: transparent linear-gradient(90deg, #6149CD 0%, #A654AC 47%, #EA5F8B 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 4px 23px 57px #6149CD42;
+    border: none;
+    color: #FFFFFF;
+    padding: .8rem 6rem;
+    font-weight: 800 !important;
+    font-size: medium;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .imageText h1{
+        padding: 2rem 2rem 0rem 4rem
+    };
+ }
