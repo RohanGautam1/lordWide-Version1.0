@@ -1,10 +1,11 @@
 import React from 'react';
-import '../Css/Forgot.css';
+import '../Css/SignIn.css';
 import LogoImage from "../Assets/logo.svg"
 import ButtonMore from "../Assets/button_more.svg";
 import {Link} from 'react-router-dom'; 
 
-function Forgot() {
+
+function SignIn() {
     return (
   
       <section class="vh-100 signup">
@@ -25,7 +26,7 @@ function Forgot() {
   
             <div class="col-sm-6 p-3">
               <div className="alreadyMember p-3 d-flex justify-content-end">
-                <span class="text">New User? <Link to={"/SignUp"} className="term-condition-text">Create an Account</Link>
+                <span class="text">New User? <Link to={"/Signup"} className="term-condition-text">Create an Account</Link>
                   <img className='moreIcon' src={ButtonMore} alt="logo-img" /></span>
               </div>
               {/* Already Member Ends */}
@@ -34,9 +35,9 @@ function Forgot() {
                 <div class="row">
   
                   <div className="formText pb-4">
-                    <h3 className="fw-normal mb-3" style={{ letterSpacing: `1px` }}>Forgot password?</h3>
+                    <h3 className="fw-normal mb-3" style={{ letterSpacing: `1px` }}>Sign In</h3>
                     <hr />
-                    <h6 className="mt-3">Enter the email address you used when you joined and we'll send you instructions to reset your password.</h6>
+                    <h6 className="mt-3">Sign in using your infos</h6>
                   </div>
                   {/* Form Text Ends */}
   
@@ -44,9 +45,10 @@ function Forgot() {
                     <label for="exampleInputEmail1## Heading ##" class="formText">Your email</label>
                     <input type="text" class="form-control rounded-pill" id="name" aria-describedby="emailHelp" name="muverPhone" placeholder='Tonynguyen@example.com'/>
                   </div>
-
-                  <div class="formButton mt-3">
-                    <button class="btn btn-info btn-lg rounded-pill" type="button">Submit</button>
+  
+                  <div class="form-group name2 col-md-6">
+                    <label for="exampleInputEmail1## Heading ##" class="formText">Password</label>
+                    <input type="password" class="form-control rounded-pill" id="name" aria-describedby="emailHelp" name="muverPhone" placeholder='•••••••••' />
                   </div>
   
                   <div class="form-check">
@@ -54,10 +56,12 @@ function Forgot() {
                     <label class="form-check-label rememberme-text " for="form2Example3">
                       Remember me &nbsp;
                     </label>
-                    <Link to={'/SignIn'} className="term-condition-text">Back to sign in</Link>
+                    <Link to={"/Forgot"} className="term-condition-text">Forgot password?</Link>
                   </div>
                   
-                  
+                  <div class="formButton mt-3">
+                    <button class="btn btn-info btn-lg rounded-pill" type="button">Sign in</button>
+                  </div>
   
                 </div>
               </div>
@@ -72,4 +76,4 @@ function Forgot() {
     )
   }
   
-  export default Forgot;
+  export default SignIn;

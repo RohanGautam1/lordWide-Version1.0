@@ -7,7 +7,7 @@
 }
 
 .backgroundImage{
-    background-image: url(../Assets/big-image.png);
+    background-image: url(../Assets/signin_background.svg);
     object-fit: cover;
     object-position: left;
 }

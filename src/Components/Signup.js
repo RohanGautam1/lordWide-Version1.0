@@ -1,16 +1,17 @@
 import React from 'react';
 import '../Css/Signup.css';
-import '../Css/Style.css';
 // import BackgroundImage from "../Assets/signup_background.svg";
 import LogoImage from "../Assets/logo.svg"
 import ButtonMore from "../Assets/button_more.svg";
+import {Link} from 'react-router-dom'; 
+
 
 
 
 function Signup() {
   return (
 
-    <section class="vh-100">
+    <section class="vh-100 signup">
       <div class="container-fluid">
         <div class="row">
 
@@ -28,12 +29,12 @@ function Signup() {
 
           <div class="col-sm-6 p-3">
             <div className="alreadyMember p-3 d-flex justify-content-end">
-              <span class="text">Already a member? <a href="#!" className="term-condition-text">Sign In</a>
+              <span class="text">Already a member? <Link to={'/SignIn'} className="term-condition-text">Sign In</Link>
                 <img className='moreIcon' src={ButtonMore} alt="logo-img" /></span>
             </div>
             {/* Already Member Ends */}
 
-            <div class="container mt-5">
+            <div class="container form mt-5">
               <div class="row">
 
                 <div className="formText pb-4">

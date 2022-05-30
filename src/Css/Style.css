@@ -60,7 +60,15 @@ hr{
     font-weight: 800 !important;
     font-size: medium;
 }
-
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .signup .container{
+        margin: 0rem;
+    }
+    .form .container{
+        margin-top: 0rem;
+    }
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .imageText h1{
